@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <form>
+            <label> Descricao </label><br/>
+            <input type="text" id='description'> <br/>
+
+            <label> Casos </label><br/>
+            <input type="number" id='caseCovid'> <br/>
+
+            <label> Positivos </label><br/>
+            <input type="number" id='confirm'> <br/>
+
+            <button type="button" onclick="addDadosCovid()">Gravar TO-DO</button>
+
+        </form>
+
+        <section>
+            <ul listaCovid >
+
+                
+            </ul>
+        </section>
+
+        <label> Total </label> <input type="number" disabled id='total'> <br/>
+        
+    </main>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>

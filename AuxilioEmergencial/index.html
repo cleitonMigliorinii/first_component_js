@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxilio Emergencial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleCard.css">
+</head>
+    <body>
+        <main>
+
+            <section id="section_formulario">
+        
+                <form>
+                        <!--Nome, CPF, rg, cidade, UF, Renda, Conta banca, ag, banco -->
+                        <div class="div_input">
+                            <label> Nome Completo</label>
+                            <input type="text" 
+                            onkeydown="atualizarLabel()" 
+                            placeholder="Informe seu nome !" 
+                            id="nomeCompleto">
+                        </div>
+
+
+                        <label id="nomeLabel"></label>
+
+                        <div class="div_input coluna_50">
+                            <label> CPF</label>
+                            <input type="text" id="cpf">
+                        </div>
+
+                        <div class="div_input coluna_50">
+                            <label> RG </label>
+                            <input type="text" id="rg">
+                        </div>
+
+                        <div class="div_input coluna_70">
+                            <label> Cidade </label>
+                            <input type="text" id="cidade">
+                        </div>
+
+                        <div class="div_input coluna_30">
+                            <label> UF </label>    
+                            <select id="uf">
+                                <option value="PR">PR</option>
+                                <option value="SC">SC</option>
+                                <option value="RS">RS</option>
+                            </select>
+                        </div>
+
+                        <div class="div_input">
+                            <label> Renda </label>
+                            <input type="number" id="renda">
+                        </div>
+
+                        <div class="div_input">
+                            <label> Banco </label>
+                            <input type="text" id="banco">
+                        </div>
+
+                        <div class="div_input coluna_60">
+                            <label> Conta </label>
+                            <input type="text" id="conta">
+                        </div>
+
+                        <div class="div_input coluna_40" >
+                            <label> Agência </label>
+                            <input  type="text" id="agencia">
+                        </div>
+
+                        <div class="div_input">
+                            <button type="button" onclick="cadastrarDadosUsuario()" class="btnCadastrar">Cadastrar</button>
+                            <button type="button" onclick="limparDadosUsuario()" class="btnLimpar">Limpar</button>
+                        </div>
+
+                </form>
+            </section>
+
+            <section id="section_dados">
+                <header class="header_section">
+                    <h1>Usuários cadastrados</h1>
+                </header>
+
+                <section cardList class="cards"></section>
+                
+            </section>
+
+
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>

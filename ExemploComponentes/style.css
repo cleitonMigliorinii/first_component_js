@@ -1,0 +1,17 @@
+main{
+    width: 40vw;
+    margin-left: 30vw;
+}
+
+section{
+    height: 250px;
+    border: 1px solid #666;
+    overflow-y: auto;
+}
+
+ul[listaCovid] {
+    font-size: 18px;
+    color: #666;
+    
+  
+}
